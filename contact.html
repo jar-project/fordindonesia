@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ford Motor Indonesia</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font: Plus Jakarta Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    
+    <!-- Logo -->
+    <img src="favicon-ford.png" class="h-10">
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex gap-8 text-gray-700 font-medium">
+      <a href="index.html" class="hover:text-blue-600">Home</a>
+      <a href="about.html" class="hover:text-blue-600">About Us</a>
+      <a href="product.html" class="hover:text-blue-600">Our Product</a>
+      <a href="pricelist.html" class="hover:text-blue-600">Pricelist</a>
+      <a href="gallery.html" class="hover:text-blue-600">Gallery</a>
+      <a href="contact.html" class="hover:text-blue-600">Contact</a>
+    </nav>
+
+    <!-- Desktop CTA -->
+    <a href="https://wa.me/6281382443832" 
+       class="hidden md:flex items-center gap-2 bg-green-500 text-white px-5 py-2 rounded-full hover:bg-green-600">
+       <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+    <!-- Hamburger -->
+    <button id="menu-btn" class="md:hidden text-2xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+    <nav class="flex flex-col gap-4 text-gray-700 font-medium">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="product.html">Our Product</a>
+      <a href="pricelist.html">Pricelist</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+
+      <a href="https://wa.me/6281382443832" 
+         class="flex items-center justify-center gap-2 bg-green-500 text-white py-3 rounded-full mt-2">
+         <i class="fab fa-whatsapp"></i> Chat WhatsApp
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- CONTACT US -->
+<section style="margin-top: 40px;" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- HEADER -->
+    <div class="text-center mb-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-2">Hubungi Kami</h2>
+      <p class="text-gray-600 text-sm md:text-base">
+        Punya pertanyaan atau mau konsultasi? Tim kami siap bantu Anda
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- FORM -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+        <form class="space-y-4">
+
+          <div>
+            <label class="text-sm font-medium">Nama</label>
+            <input type="text"
+                   class="w-full mt-1 px-4 py-2 border rounded-lg text-sm focus:ring-2 focus:ring-blue-500 outline-none"
+                   placeholder="Masukkan nama Anda">
+          </div>
+
+          <div>
+            <label class="text-sm font-medium">Email</label>
+            <input type="email"
+                   class="w-full mt-1 px-4 py-2 border rounded-lg text-sm focus:ring-2 focus:ring-blue-500 outline-none"
+                   placeholder="Masukkan email Anda">
+          </div>
+
+          <div>
+            <label class="text-sm font-medium">Pesan</label>
+            <textarea rows="4"
+                      class="w-full mt-1 px-4 py-2 border rounded-lg text-sm focus:ring-2 focus:ring-blue-500 outline-none"
+                      placeholder="Tulis pesan Anda..."></textarea>
+          </div>
+
+          <button type="submit"
+                  class="w-full bg-blue-600 text-white py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
+            Kirim Pesan
+          </button>
+
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="space-y-6">
+
+        <div>
+          <h3 class="font-semibold mb-2">Kontak</h3>
+          <p class="text-sm text-gray-600">WhatsApp: 0813-8244-3832</p>
+          <p class="text-sm text-gray-600">Email: info@fordindonesia.com</p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-2">Alamat</h3>
+          <p class="text-sm text-gray-600">
+            Jl. M.H. Thamrin No.69, Salembaran, Kec. Kosambi, Kabupaten Tangerang, Banten 15214
+          </p>
+        </div>
+
+        <!-- MAP -->
+        <div class="w-full h-64 rounded-xl overflow-hidden shadow-sm">
+          <iframe
+            src="https://maps.google.com/maps?q=jakarta&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            class="w-full h-full border-0"
+            loading="lazy">
+          </iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+
+    <!-- BRAND -->
+    <div>
+      <h3 class="text-white text-xl font-bold mb-3">
+        Ford Motor Indonesia
+      </h3>
+      <p class="text-sm text-gray-400">
+        Dealer resmi mobil Ford dengan layanan profesional, proses cepat, dan unit terbaru untuk kebutuhan Anda.
+      </p>
+    </div>
+
+    <!-- MENU -->
+    <div>
+      <h4 class="text-white font-semibold mb-3">Menu</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white">Home</a></li>
+        <li><a href="#" class="hover:text-white">About Us</a></li>
+        <li><a href="#" class="hover:text-white">Our Product</a></li>
+        <li><a href="#" class="hover:text-white">Gallery</a></li>
+        <li><a href="#" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- KONTAK -->
+    <div>
+      <h4 class="text-white font-semibold mb-3">Kontak</h4>
+      <ul class="space-y-2 text-sm">
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-phone"></i> 0813-8244-3832
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-envelope"></i> fordmotorindonesia@gmail.com
+        </li>
+        <li class="flex items-start gap-2">
+          <i class="fa-solid fa-location-dot mt-1"></i> 
+          Jakarta, Indonesia
+        </li>
+      </ul>
+
+      <!-- SOCIAL -->
+      <div class="flex gap-4 mt-4 text-lg">
+        <i class="fab fa-facebook hover:text-white"></i>
+        <i class="fab fa-instagram hover:text-white"></i>
+        <i class="fab fa-tiktok hover:text-white"></i>
+      </div>
+    </div>
+
+    <!-- MAP -->
+    <div>
+      <h4 class="text-white font-semibold mb-3">Lokasi Kami</h4>
+
+      <iframe 
+        src="https://maps.google.com/maps?q=-6.2607,106.8171&z=15&output=embed"
+        class="w-full h-40 rounded-lg border-0">
+      </iframe>
+
+      <a href="https://maps.app.goo.gl/N8f71tc2ecEzekZAA"
+         target="_blank"
+         class="text-sm text-blue-400 mt-2 inline-block hover:underline">
+         Lihat di Google Maps →
+      </a>
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-500">
+    © 2026 Ford Motor Indonesia. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- FLOAT WA -->
+<a href="https://wa.me/6281382443832"
+   class="fixed bottom-5 right-5 flex items-center gap-2 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-600">
+   <i class="fab fa-whatsapp"></i> WhatsApp
+</a>
+
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  // MOBILE MENU TOGGLE
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>
